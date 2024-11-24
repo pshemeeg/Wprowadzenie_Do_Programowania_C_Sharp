@@ -15,9 +15,7 @@ namespace Zadanie4
                 {
                     tab[i, j] = rand.Next(0, 9);
                     if ((i == j) || (i + j == tab.GetLength(0) - 1))
-                    {
                         sum += tab[i, j];
-                    }
                 }
             }
             Console.WriteLine("Suma przekątnych tej tablicy wynosi: {0}", sum);
