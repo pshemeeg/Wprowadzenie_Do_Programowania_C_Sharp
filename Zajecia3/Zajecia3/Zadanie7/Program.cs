@@ -10,12 +10,13 @@ namespace Zadanie7
 
             Console.WriteLine("Wpisz zdanie: ");
             tekst = Console.ReadLine();
-            for (int i = 0; i < tekst.Length; i++)
+            for (int i = 0; i < tekst.Length-1; i++)
             {
                 if ((tekst[i] == ' ') && (tekst[i + 1] == ' '))
                     continue;
                 Console.Write(tekst[i]);
             }
+            Console.Write(tekst[tekst.Length - 1]);
         }
     }
 }
