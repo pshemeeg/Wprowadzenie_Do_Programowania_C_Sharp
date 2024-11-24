@@ -15,8 +15,7 @@ namespace Zadanie3
                     min = num;
                 }
             }
-            Console.WriteLine("Najmniejszy element znajduje się na pozycji {0}",Array.IndexOf(tab, min));
-
+            Console.WriteLine("Najmniejszy element {0} znajduje się na pozycji {1}",min, Array.IndexOf(tab, min));
         }
     }
 }
