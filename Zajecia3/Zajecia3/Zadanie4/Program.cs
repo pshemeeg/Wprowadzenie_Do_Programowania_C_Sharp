@@ -14,13 +14,7 @@ namespace Zadanie4
                 for (int j = 0; j < tab.GetLength(1); j++)
                 {
                     tab[i, j] = rand.Next(0, 9);
-                }
-            }
-            for (int i = 0; i < tab.GetLength(0); i++)
-            {
-                for (int j = 0; j < tab.GetLength(1); j++)
-                {
-                    if ((i==j)||(i+j == tab.GetLength(0)-1))
+                    if ((i == j) || (i + j == tab.GetLength(0) - 1))
                     {
                         sum += tab[i, j];
                     }
