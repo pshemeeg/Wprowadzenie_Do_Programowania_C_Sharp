@@ -9,7 +9,21 @@ namespace Zadanie4
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            double a, b, c;
+            Console.WriteLine("Podaj pierwszą liczbę:");
+            a = double.Parse(Console.ReadLine());
+            Console.WriteLine("Podaj drugą liczbę:");
+            b = double.Parse(Console.ReadLine());
+            Console.WriteLine("Podaj trzecią liczbę");
+            c = double.Parse(Console.ReadLine());
+            if ((a > b) && (a > c))
+            {
+                Console.WriteLine(a);
+            }
+            else if ((b > c))
+                Console.WriteLine(b);
+            else
+                Console.WriteLine(c);
         }
     }
 }
